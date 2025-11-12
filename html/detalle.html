@@ -1,18 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle</title>
+    <link rel="stylesheet" href="../css/detalle.css">
+    <title>Ducktor</title>
 </head>
 
 <body>
-    <nav>
+    <header>
+        <img src="../img/ducktor.png" alt="logo" tittle="logo ducktor"></img>
+        <ul class="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../html/catalogo.html">Catálogo</a></li>
+            <!-- <li><a href="../html/detalle.html">Producto</a></li> -->
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class="bx bx-search"></i></a>
+                <input type="text" placeholder="Encuentra tu Ducktor">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
 
-    </nav>
+    <div class="detalle-pato">
+
+        <section class="titulo-pato">
+            <div class="presentacion">
+                <h3>nombre del pato en cuestión</h3>
+                <p>Keep Calm & blablabla.</p>
+            </div>
+        <section> <div class="fotogaleria">
+            <img src="../img/CoachMotivacional.png" alt="imagen pato coach motivacional"
+                    title="pato cm galeria">
+            </div>
+        </section>    
+        </section>
+        <section class="info-pato">
+            <div class="descripcion">
+                <p>descripción texto para cada uno</p>
+                <div class="precio">
+                    <p>precio€</p>
+                </div>
+        </section>
+        <section class="imagenes-pato">
+            <div><img src="../img/CoachMotivacionalFront.png" alt="imagen pato coach motivacional front"
+                    title="pato cm front">
+                <img src="../img/CoachMotivacionalLat.png" alt="imagen pato coach motivacional lateral"
+                    title="pato cm lateral">
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <!-- Footer -->
     <footer>
-
+        <div class="info" id="footer">
+            <img src="../img/patito.png" alt="logo" tittle="logo patito"></img>
+            <p>Copyright &copy; 2025 All Rights Reserved</p>
+            <a href="./html/contacto.html">Contacto</a>
+            <ul>
+                <!-- <li><a href="#"><i class='bx bxl-facebook'></i></a></li> -->
+                <!-- <li><a href="#"><i class='bx bxl-instagram'></i></a></li> -->
+            </ul>
     </footer>
 
 </body>
