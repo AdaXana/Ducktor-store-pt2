@@ -24,6 +24,7 @@ header {
 
 header img {
     max-width: 350px;
+
 }
 
 header .nav {
@@ -47,7 +48,7 @@ header .nav li a {
 }
 
 header .nav li a:hover {
-    background: #FF7F50;
+    background: #ef1a7d;
     color: #310f22;
     box-shadow: 0 0 0.625rem #ef1a7d;
     /* 10px */
@@ -82,61 +83,69 @@ header .action .searchBx input {
 
 
 /* MEDIO */
-.content {
-    margin: 0;
-    padding: 6.25rem 1rem 1rem 5rem;
-    /* 100px 80px 0 80px */
-    min-height: auto;
-    width: 100%;
-    background: #FBFFFE;
-    display: grid; 
-    grid-template-columns: 50% 1fr; 
-}
 
-.column_left{   
-    float: left;
+.titulo-articulo {
     text-align: center;
-    vertical-align: baseline;
-    
+    margin-bottom: 3rem;
 }
-.title_intro{
-    font-size: 35px;
-    font-family: "Lucida Console", "Courier New", monospace;
 
+.detalle-producto {
+    padding-top: 10rem;
 }
-.intro{
-    font-size: 20px;
-    font-family: "Lucida Console", "Courier New", monospace;
-    margin:0;
 
+.informacion-producto {
+    display: flex;
+    margin-bottom: 3rem;
 }
-.button_catalog{
-    background-color: #0047AB;
-    color: whitesmoke;
-    font-size: 100%;
-    padding: 20px 40px;
-    border-radius: 30px;
-    box-shadow: 3px;
-    margin: 15%;
+
+.informacion-producto .texto {
+    flex-basis: 40%;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    align-self: center;
 }
-.pato_benefico{
-    max-width: 50%;
+
+.descripcion {
+    margin-bottom: 3rem;
+}
+
+.informacion-producto .imagen-galeria {
+    flex-basis: 60%;
+    align-self: flex-start;
+}
+
+.imagen-galeria img {
+    max-width: 100%;
     height: auto;
-    margin-top: 10%;
+    display: block;
 }
-.column_right{
-    float: right;
-    width: 50%;
-    margin: 25%;
+
+.prueba {
+    display: flex;
+    align-items: flex-start;
 }
-.patote{
-    max-width: 200%;
+
+.opciones-compra {
+    flex-basis: 50%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.imagenes-frontal-lateral {
+    flex-basis: 50%;
+    display: flex;
+    gap: 1rem;
+}
+
+.comprar {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.imagenes-frontal-lateral img {
+    max-width: calc(50% - 0.5rem);
     height: auto;
+    display: block;
 }
-
-
-
-/* FOOTER */
 
 footer {
     height: auto;
