@@ -11,11 +11,11 @@
 
 <body>
   <header>
-    <img src="../img/ducktor.png" alt="logo" tittle="logo ducktor"></img>
+    <img src="../img/LogoDucktorNav.png" alt="logo" tittle="logo ducktor"></img>
     <ul class="nav">
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="../html/catalogo.html">Catálogo</a></li>
-      <li><a href="../html/detalle.html">Producto</a></li>
+      <!-- <li><a href="../html/detalle.html">Producto</a></li> -->
     </ul>
     <div class="action">
       <div class="searchBx">
@@ -25,61 +25,41 @@
     </div>
     <div class="toggleMenu" onclick="toggleMenu();"></div>
   </header>
-  <div class="content">
-    <form id="contactForm">
-      <h2>Contacto & Colaboración</h2>
 
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required>
+  <form>
+    <h2>Contacto</h2>
+    <div class="input-group">
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="name">Nombre</label>
+      <input type="text" name="name" id="name" placeholder="nombre">
 
-      <label for="subject">Asunto / Tipo de mensaje:</label>
-      <select id="subject" name="subject" required>
-        <option value="" disabled selected>Selecciona una opción</option>
-        <option value="general">Consulta general</option>
-        <option value="collaboration">Presupuesto / colaboración comercial</option>
-      </select>
+      <label for="phone">Teléfono</label>
+      <input type="tel" name="phone" id="phone" placeholder="Teléfono">
 
-      <div id="companyField" style="display:none;">
-        <label for="company">Empresa / Comercio:</label>
-        <input type="text" id="company" name="company">
+      <label for="email" >Email</label>
+      <input type="email" name="email" id="email" placeholder="email">
+
+      <label for="message">Mensaje</label>
+      <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+      <div class="form-txt">
+        <a href="#">Política de Provacidad</a>
+        <a href="#">Términos y condiciones</a>
       </div>
+      <input class="btn"  type="submit" value="Enviar">
 
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+  </form>
 
-      <div>
-        <input type="checkbox" id="subscribe" name="subscribe">
-        <label for="subscribe">Suscribirme a novedades y tips de bienestar con patitos</label>
-      </div>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-
-  <script>
-    const subject = document.getElementById('subject');
-    const companyField = document.getElementById('companyField');
-
-    subject.addEventListener('change', () => {
-      if (subject.value === 'collaboration') {
-        companyField.style.display = 'block';
-      } else {
-        companyField.style.display = 'none';
-      }
-    });
-  </script>
 
   <footer>
     <div class="info" id="footer">
-      <img src="../img/patito.png" alt="logo" tittle="logo patito"></img>
+      <img src="../img/LogoFoot.png" alt="logo" tittle="logo patito"></img>
       <p>Copyright &copy; 2025 All Rights Reserved</p>
       <a href="../html/contacto.html">Contacto</a>
       <ul>
         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
       </ul>
     </div>
   </footer>
