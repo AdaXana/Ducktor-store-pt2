@@ -78,82 +78,68 @@ header .action .searchBx input {
 
 /* MEDIO */
 
-.detalle-pato {
-    margin: 10rem auto;
-    /* 160px */
-    padding: 2rem;
-    /* 32px */
-    width: 80%;
-    background: #f2f2f2;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    /* 16px */
-    border-radius: 0.625rem;
-    /* 10px */
+.titulo-articulo {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
-.titulo-pato {
-    font-size: 2rem;
-    /* 32px */
-    color: #310f22;
-    margin-bottom: 1rem;
-    /* 16px */
+.detalle-producto {
+    padding-top: 10rem;
 }
 
-.presentacion {
-    margin-bottom: 1rem;
-    /* 16px */
-    font-size: 1.2rem;
-    /* 19.2px */
-    color: #555555;
-    h3 {
-        font-size: 1.5rem;
-        /* 24px */
-        color: #310f22;
-        margin-bottom: 0.5rem;
-        /* 8px */
-    }
-    p {
-        font-size: 1rem;
-        /* 16px */
-        color: #777777;
-    }
-}
-
-.info-pato {
-    font-size: 1rem;
-    /* 16px */
-    color: #777777;
-    margin-bottom: 1.5rem;
-    /* 24px */
-
-    .descripcion{
-        margin-bottom: 1rem;
-        /* 16px */
-        font-size: 1.2rem;
-        /* 19.2px */
-        color: #555555;
-    }
-
-    .precio{
-        font-size: 24px;
-        color: #310f22;
-        margin-bottom: 16px;
-    }
-}
-
-.imagenes-pato {
+.informacion-producto {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    img {
-        max-width: 200px;
-        border-radius: 5px;
-        box-shadow: 10px;
-    }
-}   
+    margin-bottom: 3rem;
+}
 
+.informacion-producto .texto {
+    flex-basis: 40%;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    align-self: center;
+}
+
+.descripcion {
+    margin-bottom: 3rem;
+}
+
+.informacion-producto .imagen-galeria {
+    flex-basis: 60%;
+    align-self: flex-start;
+}
+
+.imagen-galeria img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prueba {
+    display: flex;
+    align-items: flex-start;
+}
+
+.opciones-compra {
+    flex-basis: 50%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.imagenes-frontal-lateral {
+    flex-basis: 50%;
+    display: flex;
+    gap: 1rem;
+}
+
+.comprar {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.imagenes-frontal-lateral img {
+    max-width: calc(50% - 0.5rem);
+    height: auto;
+    display: block;
+}
 
 /* footer */
 
