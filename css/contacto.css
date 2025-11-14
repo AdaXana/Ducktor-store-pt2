@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding:80px 0 0 0;
+    padding: 80px 0 0 0;
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ header {
     align-items: center;
     z-index: 1000;
     transition: 0.5s;
-    
+
 }
 
 header img {
@@ -70,46 +70,48 @@ header .action .searchBx input {
 }
 
 .form-container {
-   
+
     min-height: 100vh;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding-top: 100px; 
-    padding-bottom: 50px; 
-    box-sizing: border-box; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 }
-form{
-   
+
+form {
+
     padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
     width: 340px;
 
 }
 
-.input-group{
+.input-group {
     display: flex;
     flex-direction: column;
     text-align: left;
 
 }
 
-h2{
+h2 {
     color: cornflowerblue;
     font-size: 35px;
 
 }
 
-label{
+label {
     color: blue;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 17px 25px;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -118,7 +120,7 @@ input, textarea {
     outline: none;
 }
 
-.form-txt{
+.form-txt {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -136,40 +138,41 @@ input, textarea {
 
 
 .newsletter-option {
-    align-self: flex-start; 
-    display: flex; 
-    align-items: center; 
-    margin-top: 15px; 
-    margin-bottom: 30px; 
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .nwsl-checkbox {
-  
-    padding: 0; 
-    margin-bottom: 0; 
-    margin-right: 10px; 
-    height: 18px; 
+
+    padding: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    height: 18px;
     width: 18px;
     border: 2px solid #868d87;
     background-color: white;
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 
 .newsletter-option label {
     margin-bottom: 0;
     font-weight: normal;
 }
+
 .btn {
     font-size: 16px;
     color: #FFFFFF;
     border: 0;
     border-radius: 25px;
     background-color: #0047AB;
-    box-shadow: 0 0 20px rgba(191, 227,252,1);
+    box-shadow: 0 0 20px rgba(191, 227, 252, 1);
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #FF7750;
     box-shadow: 0 0 0.625rem #fa5c23;
 
@@ -262,23 +265,23 @@ footer .info ul li:hover a i {
     color: #4cacec;
 }
 
-@media(max-width:991px){
-    body{
+@media(max-width:991px) {
+    body {
         padding: 30px;
 
     }
 
-    form{
+    form {
         padding: 50px 30px;
         width: 100%;
     }
 
     input {
-        padding: 15px 10px ;
+        padding: 15px 10px;
 
     }
 
-    
+
 }
 
 /* MEDIA QUERIES PARA RESPONSIVE */
@@ -325,7 +328,7 @@ footer .info ul li:hover a i {
         max-width: 120px;
     }
 
-/* Para pantallas muy grandes */
+    /* Para pantallas muy grandes */
     @media (min-width: 1200px) {
         header {
             padding: 0.5rem 3rem;
@@ -337,4 +340,3 @@ footer .info ul li:hover a i {
     }
 
 }
-
