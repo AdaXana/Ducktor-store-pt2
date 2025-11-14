@@ -84,18 +84,6 @@ header .action .searchBx input {
 
 /* MEDIO */
 
-.sello-benefico {
-    position: fixed;
-    z-index: 1000;
-    top: 8rem;
-    right: 2rem;
-}
-
-.sello-benefico img {
-    width: 150px;
-    height: auto;
-}
-
 .detalle-producto {
     padding-top: 10rem;
     font-family: poppins, sans-serif;
@@ -119,7 +107,7 @@ header .action .searchBx input {
 }
 
 .linia {
-    width: 50%;
+    width: 35%;
     border: 2px solid #b9bbbd;
     margin: 1rem auto;
 }
@@ -147,9 +135,10 @@ header .action .searchBx input {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
 .frase {
     font-style: italic;
-    color: #0c5d31;
+    color: #3491d0;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     padding-left: 2rem;
@@ -187,8 +176,9 @@ header .action .searchBx input {
 
 .opciones-compra .precio {
     font-size: 3.5rem;
-    background-color:transparent;
-    color: #007bff;;
+    background-color: transparent;
+    color: #007bff;
+    ;
     font-weight: 700;
     display: inline-block;
     margin-top: 2rem;
@@ -202,6 +192,7 @@ header .action .searchBx input {
     justify-content: center;
     align-items: center;
 }
+
 .cantidad button {
     border: none;
     cursor: pointer;

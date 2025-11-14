@@ -48,7 +48,7 @@ header .nav li a {
 }
 
 header .nav li a:hover {
-    background: #ef1a7d;
+    background: #FF7F50;
     color: #310f22;
     box-shadow: 0 0 0.625rem #ef1a7d;
     /* 10px */
