@@ -1,19 +1,16 @@
-/* BODY */
-
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header */
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0%;
-    /* 7px 80px */
     background: #4cacec;
     display: flex;
     justify-content: space-between;
@@ -33,42 +30,26 @@ header .nav {
 header .nav li {
     list-style: none;
     margin: 0.625rem;
-    /* 10px */
 }
 
 header .nav li a {
     color: white;
     text-decoration: none;
     padding: 0.625rem 1.25rem;
-    /* 10px 20px */
     border-radius: 0.3125rem;
-    /* 5px */
 }
 
 header .nav li a:hover {
     background: #ef1a7d;
     color: #310f22;
     box-shadow: 0 0 0.625rem #ef1a7d;
-    /* 10px */
+  
 }
 
-header .action .searchBx {
-    padding: 0.3125rem;
-    /* 5px */
-    margin: 0.3125rem;
-    /* 5px */
-    background: white;
-    border-radius: 0.3125rem;
-    /* 5px */
-    display: flex;
-    align-items: center;
-}
 
 header .action .searchBx i {
     font-size: 1.4rem;
-    /* 22.4px */
     margin: 0.3125rem;
-    /* 5px */
     color: #310f22;
 }
 
@@ -79,18 +60,129 @@ header .action .searchBx input {
     color: #310f22;
 }
 
+.form-container {
+   
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 100px; 
+    padding-bottom: 50px; 
+    box-sizing: border-box; 
+}
+form{
+   
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
 
-/* MEDIO */
-.content {
-  display: grid;
-  place-items: center;   /* centra en ambos ejes */
-  min-height: 100vh;
-  background: #f5f5f5;
-  padding-top: 6rem;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+h2{
+    color: cornflowerblue;
+    font-size: 35px;
+
+}
+
+label{
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    border: 2px solid #f0faf1;
+    color: blue;
+    outline: none;
+}
+
+input::placeholder,textarea::placeholder{
+    color: #868d87;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.form-txt a {
+    color: blue;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 
 
+.newsletter-option {
+    align-self: flex-start; 
+    display: flex; 
+    align-items: center; 
+    margin-top: 15px; 
+    margin-bottom: 30px; 
+}
+
+.nwsl-checkbox {
+  
+    padding: 0; 
+    margin-bottom: 0; 
+    margin-right: 10px; 
+    height: 18px; 
+    width: 18px;
+    border: 2px solid #868d87;
+    background-color: white;
+    border-radius: 4px; 
+}
+
+.newsletter-option label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: lightslategray;
+    box-shadow: 0 0 20px rgba(191, 227,252,1);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ef1a7d;
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+
+    }
+
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px 10px ;
+    }
+}
 
 footer {
     height: auto;
