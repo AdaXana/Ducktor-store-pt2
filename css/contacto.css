@@ -10,18 +10,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 0.4375rem 5rem;
     background: #4cacec;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; 
+    z-index: 1000;
+    transition: 0.5s;
     
 }
 
 header img {
     max-width: 350px;
-
 }
 
 header .nav {
@@ -42,25 +42,19 @@ header .nav li a {
 }
 
 header .nav li a:hover {
-    background: #FF7750;
+    background: #FF7F50;
     color: #4b2814;
     box-shadow: 0 0 0.625rem #fa5c23;
-  
 }
 
 header .action .searchBx {
     padding: 0.3125rem;
-    /* 5px */
     margin: 0.3125rem;
-    /* 5px */
     background: white;
     border-radius: 0.3125rem;
-    /* 5px */
     display: flex;
     align-items: center;
 }
-
-
 
 header .action .searchBx i {
     font-size: 1.4rem;
@@ -124,10 +118,6 @@ input, textarea {
     outline: none;
 }
 
-input::placeholder,textarea::placeholder{
-    color: #868d87;
-}
-
 .form-txt{
     margin-bottom: 30px;
     display: flex;
@@ -185,22 +175,6 @@ input::placeholder,textarea::placeholder{
 
 }
 
-@media(max-width:991px){
-    body{
-        padding: 30px;
-
-    }
-
-    form{
-        padding: 50px 30px;
-        width: 100%;
-    }
-
-    input {
-        padding: 15px 10px ;
-    }
-}
-
 footer {
     height: auto;
     min-height: 70px;
@@ -215,7 +189,7 @@ footer {
 
 footer .info {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
@@ -232,10 +206,21 @@ footer .info p {
     margin: 0;
 }
 
+footer .info .copy {
+    /* flex: 1; */
+    text-align: left;
+}
+
 footer .info a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+
+}
+
+footer .info .contact {
+    flex: 1;
+    text-align: center;
 }
 
 footer .info a:hover {
@@ -276,3 +261,80 @@ footer .info ul li a i {
 footer .info ul li:hover a i {
     color: #4cacec;
 }
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+
+    }
+
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px 10px ;
+
+    }
+
+    
+}
+
+/* MEDIA QUERIES PARA RESPONSIVE */
+
+/* Tablets */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    header img {
+        max-width: 150px;
+    }
+
+    header .nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+
+    header .nav li {
+        margin: 0 0.25rem;
+    }
+
+    header .nav li a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    header .action .searchBx input {
+        width: 120px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    header img {
+        max-width: 120px;
+    }
+
+/* Para pantallas muy grandes */
+    @media (min-width: 1200px) {
+        header {
+            padding: 0.5rem 3rem;
+        }
+
+        header img {
+            max-width: 250px;
+        }
+    }
+
+}
+
