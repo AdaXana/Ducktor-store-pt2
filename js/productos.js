@@ -13,7 +13,7 @@ const productos = [
             "Lleva un silbato y un portapapeles con gráficos de progreso ascendente.",
             "Fabricado con 100% de ánimo y positividad."],
         imagenGaleria: "../img/CoachMotivacional.png",
-        imagenFrontal: "../img/CoachMotivacionalFontP.png",
+        imagenFrontal: "../img/CoachMotivacionalFrontP.png",
         imagenLateral: "../img/CoachMotivacionalLatP.png",
         precio: 12.00,
         categoria: "Corporativo",

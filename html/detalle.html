@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/detalle.css">
     <title>Ducktor Store</title>
 </head>
 
@@ -59,8 +60,12 @@
                     <span class="cantidad-numero" id="cantidad"> 1 </span>
                     <button id="btn-mas"> + </button>
                 </div>
+                <div class="stock">
+                    <p id="info-stock" class="stock-mensaje"></p>
+                </div>
                 <button class="comprar" id="btn-add-carrito" data-id="">Agregar al carrito</button>
             </div>
+            <p class="mensaje-error" id="mensaje-stock"></p>
             <div class="imagenes-frontal-lateral">
                 <img id="img-frontal" src="" alt="Frontal">
                 <img id="img-lateral" src="" alt="Lateral">
