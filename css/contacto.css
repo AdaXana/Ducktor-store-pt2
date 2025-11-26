@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 80px 0 0 0;
     box-sizing: border-box;
+
 }
 
 
@@ -77,6 +78,7 @@ header .action .searchBx input {
     padding-top: 100px;
     padding-bottom: 50px;
     box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
 
 form {
@@ -86,6 +88,7 @@ form {
     border-radius: 20px;
     text-align: center;
     width: 340px;
+    font-family: poppins, sans-serif;
 
 }
 
@@ -103,7 +106,7 @@ h2 {
 }
 
 label {
-    color: blue;
+    color: #0047AB;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -115,7 +118,7 @@ textarea {
     border-radius: 25px;
     margin-bottom: 20px;
     border: 2px solid #f0faf1;
-    color: blue;
+    color: #0047AB;
     outline: none;
 }
 
@@ -128,7 +131,7 @@ textarea {
 }
 
 .form-txt a {
-    color: blue;
+    color: #0047AB;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -163,7 +166,7 @@ textarea {
     color: #FFFFFF;
     border: 0;
     border-radius: 25px;
-    background-color: #0047AB;
+    background-color: cornflowerblue;
     box-shadow: 0 0 20px rgba(191, 227, 252, 1);
     cursor: pointer;
 }
@@ -172,6 +175,14 @@ textarea {
     background-color: #FF7750;
     box-shadow: 0 0 0.625rem #fa5c23;
 
+}
+
+#confirm_message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #0047AB;
+  margin-top: 10px;
 }
 
 footer {
