@@ -8,12 +8,13 @@ const productos = [
 
             Este pequeño campeón no juzga, solo inspira. Colócalo en tu escritorio y deja que su espíritu inquebrantable te recuerde tus metas, celebre tus pequeños triunfos y te impulse a ver cada desafío como una oportunidad para crecer. Es la voz amable que susurra:`,
         frase: "¡Sigue adelante, tú puedes con esto!",
+        color: "#cf3805",
         caracteristicas: [
             "Viste su icónico chándal de coach.",
             "Lleva un silbato y un portapapeles con gráficos de progreso ascendente.",
             "Fabricado con 100% de ánimo y positividad."],
         imagenGaleria: "../img/CoachMotivacional.png",
-        imagenFrontal: "../img/CoachMotivacionalFontP.png",
+        imagenFrontal: "../img/CoachMotivacionalFrontP.png",
         imagenLateral: "../img/CoachMotivacionalLatP.png",
         precio: 12.00,
         categoria: "Corporativo",
@@ -28,6 +29,7 @@ const productos = [
 
         Colócalo junto a tu monitor durante las videollamadas. Con su postura atenta, te recordará pausar, asentir y preguntar "¿has probado a...?" antes de saltar a la solución. Es el recordatorio silencioso que dice:`,
         frase: "Entendido. ¡Ahora, cuéntame más!",
+        color: "#572b12",
         caracteristicas: [
             "Su postura corporal abierta y receptiva, listo para escuchar y retener.",
             "Lleva una libreta y un lápiz para 'tomar notas' de tus ideas.",
@@ -48,6 +50,7 @@ const productos = [
 
         Ponlo de cara a la puerta o a tu compañero como señal de "No molestar". Su mirada decidida y sus anteojeras bloquean el ruido digital y te ayudan a conquistar esa tarea compleja. Te mira fijamente y piensa:`,
         frase: "Una línea de código a la vez. Lo demás no existe.",
+        color: "#3491d0",
         caracteristicas: [
             "Estado de concentración, bloqueando toda distracción.",
             "Luce una camiseta que advierte al exterior: 'Shhh... Compilando mis pensamientos'.",
@@ -68,6 +71,7 @@ const productos = [
 
         Cuando sientas que la frustración sube, tómate 30 segundos para mirarlo. Su postura serena te invita a respirar hondo, soltar el ratón y recordar que nada es tan grave. Es la calma en la tormenta que susurra:`,
         frase: "Respira. Es solo un error de sintaxis, no el fin del mundo.",
+        color: "#838d8c",
         caracteristicas: [
             "Sentado en una serena postura de loto.",
             "Luce su túnica de meditación y un colgante con el símbolo Om.",
@@ -88,6 +92,7 @@ const productos = [
 
         Colócalo junto al teclado cuando necesites pensar con claridad. Su lupa te recuerda mirar de cerca y su gorra de detective te inspira a preguntar "por qué" cinco veces. Es el lógico implacable que te dice:`,
         frase: "Elemental, mi querido developer. El error está en la línea 42.",
+        color: "#7c98a7",
         caracteristicas: [ 
             "Luce unas gafas para no perder el mínimo detalle.",
             "Sostiene una gran lupa, listo para inspeccionar el código.",
@@ -108,6 +113,7 @@ const productos = [
 
         Su única misión es recordarte que te levantes, estires las piernas y te tomes ese café. Míralo y verás que no hay prisa, que tu bienestar es lo primero. Es la voz relajada que te dice:`,
         frase: "¡Cierra el portátil! Ese commit puede esperar.",
+        color: "#6fc7bd",
         caracteristicas: [
             "Sumergido en su jacuzzi de madera personal, dejando que las burbujas disuelvan el estrés del sprint.",
             "Luce dos rodajas de pepino para un merecido detox visual de sprints y deadlines.",
@@ -128,6 +134,7 @@ const productos = [
         Creemos en el bienestar de quienes crean el futuro digital. Por eso, el 100% de los beneficios de cada "Patito Esperanza" vendido se destina íntegramente a la Fundación.
         Se dedican al bienestar de las mentes detrás del código mediante la financiación de programas de salud mental y la lucha contra el burnout en el sector tecnológico.`,
         frase: "¡Apoya una Causa Importante!",
+        color: "#0c5d31",
         caracteristicas: [
             "Viste la bata oficial de Duck-tor's.",
             "Lleva el lazo verde de la concienciación sobre la salud mental.",
