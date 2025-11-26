@@ -129,7 +129,7 @@ header .action .searchBx input {
 
 .frase {
     font-style: italic;
-    color: #cf3805;
+    color: #333;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     padding-left: 2rem;
@@ -169,7 +169,6 @@ header .action .searchBx input {
     font-size: 3.5rem;
     background-color: transparent;
     color: #007bff;
-    ;
     font-weight: 700;
     display: inline-block;
     margin-top: 2rem;
@@ -391,9 +390,10 @@ footer .info ul li:hover a i {
     header img {
         max-width: 120px;
     }
+}
 
 /* Para pantallas muy grandes */
-    @media (min-width: 1200px) {
+@media (min-width: 1200px) {
         header {
             padding: 0.5rem 3rem;
         }
@@ -402,5 +402,3 @@ footer .info ul li:hover a i {
             max-width: 250px;
         }
     }
-
-}
