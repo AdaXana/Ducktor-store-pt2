@@ -1,0 +1,1 @@
+const formulario = document.getElementById('form_duck');
