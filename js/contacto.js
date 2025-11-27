@@ -14,7 +14,6 @@ formulario.addEventListener ("submit", function(event) {
         phone : phone,
         email : email,
         message : message
-
     }
     console.log(personalData);
 
