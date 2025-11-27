@@ -166,7 +166,7 @@ export {
     decrementQuantity,
     getCart,
     calculateTotal,
-    renderCart
+    renderCart,
 };
 
 
