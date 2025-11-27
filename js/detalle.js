@@ -96,3 +96,23 @@ btnMas.addEventListener("click", () => {
         infoStock.className = "stock-mensaje stock-rojo";
     }
 });
+
+btnCarrito.addEventListener("click", () => {
+    if (!matchDucktor || contador === 0) return;
+    let carritoEnCurso = JSON.parse(localStorage.getItem('carrito')) || [];
+    const indiceEncontrado = carritoEnCurso.findIndex(item => item.id === matchDucktor.id);
+    if (indiceEncontrado !== -1) {
+        carritoEnCurso[indiceEncontrado].cantidad += contador;
+    } else {
+        const nuevoItem = {
+            id: matchDucktor.id,
+            nombre: matchDucktor.nombre,
+            precio: matchDucktor.precio,
+            imagen: matchDucktor.imagenGaleria, 
+            cantidad: contador
+        };
+        carritoEnCurso.push(nuevoItem);
+    }
+    localStorage.setItem('carrito', JSON.stringify(carritoEnCurso));
+    alert(`¡Añadido! Has metido ${contador} ${matchDucktor.nombre} en el carrito.`);
+});
