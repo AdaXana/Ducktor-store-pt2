@@ -4,7 +4,7 @@ const productos = [
         nombre: "Ducktor Motivator",
         subtitulo: "Tu Dosis Diaria de 'Tú Puedes'",
         descripcion: `¿Necesitas un empujón para ese sprint final? ¿O quizás un recordatorio de que eres capaz de superar cualquier bug?
-            El Patito Motivador es tu aliado incansable, diseñado para infundirte esa energía y confianza extra que a veces se desvanecen en el largo camino del desarrollo.
+            El Ducktor Motivador es tu aliado incansable, diseñado para infundirte esa energía y confianza extra que a veces se desvanecen en el largo camino del desarrollo.
 
             Este pequeño campeón no juzga, solo inspira. Colócalo en tu escritorio y deja que su espíritu inquebrantable te recuerde tus metas, celebre tus pequeños triunfos y te impulse a ver cada desafío como una oportunidad para crecer. Es la voz amable que susurra:`,
         frase: "¡Sigue adelante, tú puedes con esto!",
