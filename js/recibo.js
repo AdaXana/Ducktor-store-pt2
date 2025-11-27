@@ -1,21 +1,21 @@
 const listaTicket = document.getElementById("lista-ticket");
 const precioFinal = document.getElementById("precio-final");
 
-// // array de prueba para ver * y + de recibo, listo para enlazar con codigo carrito Ana
-// const carrito = [
-//     {
-//         nombre: "Duktor FocusOn",
-//         precio: 12,
-//         cantidad: 5,
-//     },
-//     {
-//         nombre: "Duktor Motivador",
-//         precio: 12,
-//         cantidad: 3,
-//     }
-// ]
+// array de prueba para ver * y + de recibo, listo para enlazar con codigo carrito Ana
+const carrito = [
+    {
+        nombre: "Duktor FocusOn",
+        precio: 12,
+        cantidad: 5,
+    },
+    {
+        nombre: "Duktor Motivador",
+        precio: 12,
+        cantidad: 3,
+    }
+]
 
-const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+//const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 const filasTicket = carrito.map((item) => {
     const subtotal = item.precio * item.cantidad;

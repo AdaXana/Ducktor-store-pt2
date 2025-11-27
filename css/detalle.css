@@ -394,11 +394,11 @@ footer .info ul li:hover a i {
 
 /* Para pantallas muy grandes */
 @media (min-width: 1200px) {
-        header {
-            padding: 0.5rem 3rem;
-        }
-
-        header img {
-            max-width: 250px;
-        }
+    header {
+        padding: 0.5rem 3rem;
     }
+
+    header img {
+        max-width: 250px;
+    }
+}
