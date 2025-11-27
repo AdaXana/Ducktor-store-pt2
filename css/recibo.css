@@ -58,11 +58,15 @@ header .action .searchBx i {
 header .action .searchBx input {
     outline: none;
     border: none;
+    background: transparent;
     font-size: 1rem;
     color: #310F22;
 }
 
-
+input::placeholder {
+    color: #310F22;
+    background-color: #F7F7F7;
+}
 /* Main */
 
 .checkout-container {
