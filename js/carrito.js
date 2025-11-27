@@ -64,34 +64,50 @@ const updateQuantity = (productId, newQuantity) => {
     const productInfo = productos.find(p => p.id === productId);
     const existingItem = carrito.find(item => item.id === productId);
 
+    const quantity = parseInt(newQuantity);
 
-    if (!productInfo || !existingItem) {
-        console.error("Ítem o producto no encontrado para actualizar cantidad.");
+    if (!productInfo) {
+        console.error("Producto no encontrado con ID:", productId);
         return;
     }
-
-    const quantity = parseInt(newQuantity);
 
     if (isNaN(quantity) || quantity < 0) {
         console.error("La cantidad debe ser un número positivo.");
         return;
     }
+    
+    // --- LÓGICA DE MANEJO DE CANTIDAD ---
 
     if (quantity === 0) {
         // Lógica: Si cantidad llega a 0 -> eliminar item
         removeFromCart(productId);
         console.log(`Cantidad a 0: Ítem ${productId} eliminado.`);
-    } else if (quantity > productInfo.stock) {
-        console.warn(`No puedes pedir ${quantity}, solo hay ${productInfo.stock}.`);
-        //  Establecer la cantidad al máximo de stock si deseas
-        existingItem.cantidad = productInfo.stock;
-    } else {
-        existingItem.cantidad = quantity;
+    } else if (existingItem) {
+        // CASO 1: EL PRODUCTO YA EXISTE (ACTUALIZAR)
+        if (quantity > productInfo.stock) {
+            console.warn(`No puedes pedir ${quantity}, solo hay ${productInfo.stock}.`);
+            existingItem.cantidad = productInfo.stock;
+        } else {
+            existingItem.cantidad = quantity;
+            console.log(`Cantidad de ${productInfo.nombre} actualizada a ${quantity}.`);
+        }
         saveCart();
-        console.log(`Cantidad de ${productInfo.nombre} actualizada a ${quantity}.`);
-    }
 
-    renderCart(); // Llamar a renderCart después de modificar
+    } else if (quantity > 0) {
+        // CASO 2: EL PRODUCTO ES NUEVO (AÑADIR)
+        if (quantity > productInfo.stock) {
+            console.warn(`El producto es nuevo pero solo hay ${productInfo.stock} unidades. Se añadirá el máximo.`);
+            carrito.push({ id: productId, cantidad: productInfo.stock });
+        } else {
+            carrito.push({ id: productId, cantidad: quantity });
+            console.log(`Producto ${productInfo.nombre} añadido al carrito con cantidad ${quantity}.`);
+        }
+        saveCart();
+    } 
+    
+    // Si llegamos aquí y no existe, y quantity es 0, no hacemos nada (ya fue validado arriba)
+
+    renderCart();
 };
 
 // Función auxiliar para restar 1 unidad (útil para botones de decremento)
