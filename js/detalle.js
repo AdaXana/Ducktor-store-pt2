@@ -1,51 +1,29 @@
 import { productos } from './productos.js';
+// 1. IMPORTAR LA FUNCIÓN NECESARIA
+import { addToCart, updateQuantity, getCart } from './carrito.js'; 
 
 const params = new URLSearchParams(window.location.search);
 const idDucktor = params.get('id') || "Fundacion";
 
 let matchDucktor = null;
 
+// Búsqueda del producto
 productos.forEach((ducktorX) => {
     if (ducktorX.id === idDucktor) {
         matchDucktor = ducktorX;
     }
 });
 
+// ********** Lógica de Carga de Contenido y Stock **********
+
 const titulo = document.getElementById("nombre-pato");
-titulo.textContent = matchDucktor.nombre;
-
-const subtitulo = document.getElementById("subtitulo-pato");
-subtitulo.textContent = matchDucktor.subtitulo;
-
-const descripcion = document.getElementById("descripcion-pato");
-descripcion.textContent = matchDucktor.descripcion;
-
-const frase = document.getElementById("frase-pato");
-frase.innerHTML = `<b>${matchDucktor.frase}</b>`;
-frase.style.color = matchDucktor.color;
-
-const ulCaracteristicas = document.getElementById("lista-caracteristicas");
-ulCaracteristicas.innerHTML = "";
-matchDucktor.caracteristicas.forEach((caracteristica) => {
-    const item = document.createElement("li");
-    item.textContent = caracteristica;
-    ulCaracteristicas.appendChild(item);
-});
-
-const imgPrincipal = document.getElementById("img-principal");
-imgPrincipal.src = matchDucktor.imagenGaleria;
-
-const imagenFrontal = document.getElementById("img-frontal");
-imagenFrontal.src = matchDucktor.imagenFrontal;
-
-const imagenLateral = document.getElementById("img-lateral");
-imagenLateral.src = matchDucktor.imagenLateral;
+titulo.textContent = matchDucktor.nombre; 
 
 const precio = document.getElementById("precio-pato");
 precio.textContent = `${matchDucktor.precio.toFixed(2)} €`;
 
 const btnCarrito = document.getElementById("btn-add-carrito");
-btnCarrito.dataset.id = matchDucktor.id;
+btnCarrito.dataset.id = matchDucktor.id; // Se mantiene el data-id
 
 const displayCantidad = document.getElementById("cantidad");
 const btnMenos = document.getElementById("btn-menos");
@@ -77,6 +55,8 @@ function comprobarStock() {
 };
 comprobarStock();
 
+// ********** Lógica de +/- Cantidad **********
+
 btnMenos.addEventListener("click", () => {
     if (contador > 1) {
         contador = contador - 1;
@@ -97,22 +77,28 @@ btnMas.addEventListener("click", () => {
     }
 });
 
+// ********** LÓGICA DE ENLACE CON CARRITO.JS **********
+
 btnCarrito.addEventListener("click", () => {
     if (!matchDucktor || contador === 0) return;
-    let carritoEnCurso = JSON.parse(localStorage.getItem('carrito')) || [];
-    const indiceEncontrado = carritoEnCurso.findIndex(item => item.id === matchDucktor.id);
-    if (indiceEncontrado !== -1) {
-        carritoEnCurso[indiceEncontrado].cantidad += contador;
-    } else {
-        const nuevoItem = {
-            id: matchDucktor.id,
-            nombre: matchDucktor.nombre,
-            precio: matchDucktor.precio,
-            imagen: matchDucktor.imagenGaleria, 
-            cantidad: contador
-        };
-        carritoEnCurso.push(nuevoItem);
+
+    // 1. Obtener el carrito actual para saber si el producto YA está dentro
+    const carritoActual = getCart(); 
+    const itemEnCarrito = carritoActual.find(item => item.id === matchDucktor.id);
+    
+    let nuevaCantidad = contador;
+    if (itemEnCarrito) {
+        // 2. Si ya está, la nueva cantidad será la suma de la existente + el contador de la página.
+        nuevaCantidad += itemEnCarrito.cantidad;
     }
-    localStorage.setItem('carrito', JSON.stringify(carritoEnCurso));
+    
+    // 3. Usamos updateQuantity para gestionar el stock y la cantidad total.
+    // Esto es más limpio que llamar a addToCart 'contador' veces.
+    updateQuantity(matchDucktor.id, nuevaCantidad);
+
     alert(`¡Añadido! Has metido ${contador} ${matchDucktor.nombre} en el carrito.`);
+    
+    contador = 1;
+    displayCantidad.textContent = contador;
+    comprobarStock();
 });
