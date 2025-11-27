@@ -304,6 +304,7 @@ footer .info ul li:hover a i {
     header img {
         max-width: 120px;
     }
+/*  */
 
 /* Para pantallas muy grandes */
     @media (min-width: 1200px) {
@@ -315,5 +316,3 @@ footer .info ul li:hover a i {
             max-width: 250px;
         }
     }
-
-}
