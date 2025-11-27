@@ -106,7 +106,7 @@ const decrementQuantity = (productId) => {
 const removeFromCart = (productId) => {
 
     carrito = carrito.filter(item => item.id !== productId);
-    localStorage.setItem('carrito', JSON.stringify(carrito)); 
+    localStorage.setItem('carrito', JSON.stringify(carrito));
     renderCart();
 };
 
@@ -130,7 +130,7 @@ const renderCart = () => {
     const totalDisplay = document.getElementById('total-carrito');
 
     if (!container || !totalDisplay) return;
-    container.innerHTML = '<p class="text_payment">Tus productos</p>';
+    container.innerHTML = '';
     if (carrito.length === 0) {
         container.innerHTML += '<p style="text-align: center; margin-top: 1rem;">Tu carrito está vacío 🦆</p>';
         totalDisplay.textContent = '0.00€';
@@ -144,20 +144,31 @@ const renderCart = () => {
         const subtotal = producto.precio * item.cantidad;
 
         const itemHTML = `
-            <div class="item-carrito" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #ccc;">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <img src="${producto.imagenGaleria}" alt="${producto.nombre}" width="50" style="border-radius:5px;">
-                    <div>
-                        <p style="font-weight:bold; margin:0;">${producto.nombre}</p>
-                        <p style="font-size:0.9rem; margin:0;">${item.cantidad} x ${producto.precio.toFixed(2)}€</p>
+            <div class="item-carrito">
+                
+                <div class="info-producto">
+                    <img src="${producto.imagenGaleria}" alt="${producto.nombre}">
+                    <div class="detalles">
+                        <p class="nombre">${producto.nombre}</p>
+                        <p class="precio-unitario">${producto.precio.toFixed(2)}€</p>
                     </div>
                 </div>
-                <div style="text-align: right;">
-                    <p style="font-weight:bold; margin:0;">${subtotal.toFixed(2)}€</p>
-                    <button onclick="window.removeFromCart('${item.id}')" style="border:none; background:transparent; cursor:pointer; color:red;">🗑️</button>
+
+                <div class="controles-cantidad">
+                    <button class="btn-cantidad" onclick="window.restarUnidad('${item.id}')">-</button>
+                    <span class="cantidad">${item.cantidad}</span>
+                    <button class="btn-cantidad" onclick="window.sumarUnidad('${item.id}')">+</button>
+                </div>
+
+                <div class="total-borrar">
+                    <p class="precio-subtotal">${subtotal.toFixed(2)}€</p>
+                    <button class="btn-eliminar" onclick="window.removeFromCart('${item.id}')">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
                 </div>
             </div>
         `;
+
         container.innerHTML += itemHTML;
     });
 
@@ -166,6 +177,69 @@ const renderCart = () => {
 };
 
 
+window.sumarUnidad = (id) => {
+
+    const item = carrito.find(p => p.id === id);
+    const productoOriginal = productos.find(p => p.id === id);
+
+    if (item && productoOriginal) {
+        if (item.cantidad < productoOriginal.stock) {
+            item.cantidad++;
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            renderCart();
+        } else {
+            alert(`¡Ups! Solo tenemos ${productoOriginal.stock} unidades de este pato.`);
+        }
+    }
+};
+
+window.restarUnidad = (id) => {
+    const item = carrito.find(p => p.id === id);
+
+    if (item) {
+        if (item.cantidad > 1) {
+            item.cantidad--;
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            renderCart();
+        }
+        else {
+            let confirmar = confirm("¿Quieres eliminar este pato del carrito?");
+            if (confirmar) {
+                removeFromCart(id);
+            }
+        }
+    }
+};
+
+const vaciarCarrito = () => {
+    let confirmar = confirm("¿Seguro que quieres eliminar todos los productos?");
+    
+    if (confirmar) {
+        carrito = []; 
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        renderCart();
+    }
+};
+
+if (typeof window !== 'undefined') {
+    window.removeFromCart = removeFromCart;
+    window.sumarUnidad = sumarUnidad;
+    window.restarUnidad = restarUnidad;
+    window.vaciarCarrito = vaciarCarrito;
+
+    document.addEventListener("DOMContentLoaded", renderCart);
+
+    const btnPagar = document.getElementById('btn-pagar');
+    if (btnPagar) {
+        btnPagar.addEventListener('click', () => {
+            if (carrito.length > 0) {
+                window.location.href = './recibo.html';
+            } else {
+                alert("El carrito está vacío");
+            }
+        });
+    }
+}
 
 // --- ZONA DE EXPORTACIÓN PARA NODE.JS ---
 export {
@@ -189,21 +263,3 @@ export {
 //     window.calculateTotal = calculateTotal;
 //     window.clearCart = () => { carrito = []; saveCart(); console.log("Carrito vaciado"); };
 // }
-
-
-if (typeof window !== 'undefined') {
-    window.removeFromCart = removeFromCart;
-
-    document.addEventListener("DOMContentLoaded", renderCart);
-
-    const btnPagar = document.getElementById('btn-pagar');
-    if (btnPagar) {
-        btnPagar.addEventListener('click', () => {
-            if (carrito.length > 0) {
-                window.location.href = './recibo.html';
-            } else {
-                alert("El carrito está vacío");
-            }
-        });
-    }
-}
