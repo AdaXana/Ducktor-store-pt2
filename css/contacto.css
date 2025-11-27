@@ -2,72 +2,10 @@ body {
     margin: 0;
     padding: 80px 0 0 0;
     box-sizing: border-box;
-}
-
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.4375rem 5rem;
-    background: #4cacec;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    transition: 0.5s;
 
 }
 
-header img {
-    max-width: 350px;
-}
-
-header .nav {
-    display: flex;
-    align-items: center;
-}
-
-header .nav li {
-    list-style: none;
-    margin: 0.625rem;
-}
-
-header .nav li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.625rem 1.25rem;
-    border-radius: 0.3125rem;
-}
-
-header .nav li a:hover {
-    background: #FF7F50;
-    color: #4b2814;
-    box-shadow: 0 0 0.625rem #fa5c23;
-}
-
-header .action .searchBx {
-    padding: 0.3125rem;
-    margin: 0.3125rem;
-    background: white;
-    border-radius: 0.3125rem;
-    display: flex;
-    align-items: center;
-}
-
-header .action .searchBx i {
-    font-size: 1.4rem;
-    margin: 0.3125rem;
-    color: #310f22;
-}
-
-header .action .searchBx input {
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    color: #310f22;
-}
+/* MAIN */
 
 .form-container {
     min-height: 100vh;
@@ -77,6 +15,7 @@ header .action .searchBx input {
     padding-top: 100px;
     padding-bottom: 50px;
     box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
 
 form {
@@ -86,6 +25,7 @@ form {
     border-radius: 20px;
     text-align: center;
     width: 340px;
+    font-family: poppins, sans-serif;
 
 }
 
@@ -103,7 +43,7 @@ h2 {
 }
 
 label {
-    color: blue;
+    color: #0047AB;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -115,7 +55,7 @@ textarea {
     border-radius: 25px;
     margin-bottom: 20px;
     border: 2px solid #f0faf1;
-    color: blue;
+    color: #0047AB;
     outline: none;
 }
 
@@ -128,7 +68,7 @@ textarea {
 }
 
 .form-txt a {
-    color: blue;
+    color: #0047AB;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -163,7 +103,7 @@ textarea {
     color: #FFFFFF;
     border: 0;
     border-radius: 25px;
-    background-color: #0047AB;
+    background-color: cornflowerblue;
     box-shadow: 0 0 20px rgba(191, 227, 252, 1);
     cursor: pointer;
 }
@@ -172,6 +112,14 @@ textarea {
     background-color: #FF7750;
     box-shadow: 0 0 0.625rem #fa5c23;
 
+}
+
+#confirm_message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #0047AB;
+  margin-top: 10px;
 }
 
 footer {
@@ -283,55 +231,15 @@ footer .info ul li:hover a i {
 
 /* Tablets */
 @media (max-width: 768px) {
-    header {
-        padding: 0.5rem 1rem;
-        flex-wrap: wrap;
-    }
 
-    header img {
-        max-width: 150px;
-    }
-
-    header .nav {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        margin-top: 0.5rem;
-    }
-
-    header .nav li {
-        margin: 0 0.25rem;
-    }
-
-    header .nav li a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
-    }
-
-    header .action .searchBx input {
-        width: 120px;
-    }
 }
 
 /* Móviles */
 @media (max-width: 480px) {
-    header {
-        padding: 0.5rem;
-    }
 
-    header img {
-        max-width: 120px;
-    }
+}
 
-    /* Para pantallas muy grandes */
-    @media (min-width: 1200px) {
-        header {
-            padding: 0.5rem 3rem;
-        }
-
-        header img {
-            max-width: 250px;
-        }
-    }
+/* Para pantallas muy grandes */
+@media (min-width: 1200px) {
 
 }

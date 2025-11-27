@@ -1,0 +1,142 @@
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+
+.checkout-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+.recibo {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.receipt-header .icon-success {
+    font-size: 4rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.receipt-header h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.receipt-header h3{
+    margin-bottom: 0.5rem;
+}
+
+.order-id {
+    background-color: #f0f8ff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #007bff;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.tabla-ticket {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.encabezado-ticket th {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    color: #666;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+}
+
+.lista-ticket td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    vertical-align: middle;
+}
+
+.total-ticket td {
+    padding: 1rem;
+    border-top: 2px solid #eee;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+#precio-final {
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+.acciones-ticket {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-volver, .btn-imprimir {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-volver {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-imprimir {
+    background-color: #e0e0e0; /* Gris suave */
+    color: #333;
+    border: none;
+}
+
+.btn-imprimir:hover {
+    background-color: #d0d0d0;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVE */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+
+}
+
+/* Para pantallas muy grandes */
+@media (min-width: 1200px) {
+
+}
