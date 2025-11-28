@@ -6,6 +6,9 @@ CAST / ENG
 
 Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
 Este README está diseñado como una presentación visual, atractiva, moderna y completamente bilingüe.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Welcome to the **Ducks Store** project, a digital store for rubber ducks transformed into a **dynamic application using JavaScript**.
+This README is designed as a visually appealing, modern, and fully bilingual presentation.
 
 ---
 
@@ -13,7 +16,7 @@ Este README está diseñado como una presentación visual, atractiva, moderna y 
 
 # 🐥 ¿Qué es Ducks Store?
 
-<img src="./img/image.png" width="350" /> 
+<img src="./img/image.png" width="550" /> 
 
 Ducks Store es una tienda online creada para demostrar el uso de **HTML5, CSS3 y JavaScript ES6+** aplicados a una experiencia de compra realista. Esta segunda fase del proyecto transforma una web estática en una aplicación totalmente dinámica.
 
@@ -56,7 +59,7 @@ Incluye:
 
 ## 💳 **3. Checkout Ficticio**
 
-<img src="" width="350" /> <!-- IMG CHECKOUT -->
+<img src="./img/image8.png" width="350" /> >
 
 - Muestra un **recibo detallado**.
 - Productos comprados + precios individuales.
@@ -126,7 +129,7 @@ Incluye:
 
 # 🦆 DUCKS STORE — FULL DYNAMIC APP 🛒
 
-<img align="right" src="./img/image-1.png" width="220" />
+<img src="./img/image.png" width="550" /> 
 
 Ducks Store is a digital rubber-duck shop built to showcase **HTML5, CSS3 and modern JavaScript** applied to a real e‑commerce experience. This second development phase converts the original static site into a fully dynamic application.
 
@@ -168,7 +171,7 @@ Includes:
 
 ## 💳 **3. Mock Checkout**
 
-<img src="" width="350" /> <!-- IMG CHECKOUT -->
+<img src="./img/image8.png" width="350" /> 
 
 - Displays a full purchase receipt.
 - Lists products and unit prices.
