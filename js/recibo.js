@@ -47,4 +47,19 @@ const totalCalculado = carrito.reduce((acumulado, item) => {
     
 }, 0); // El 0 es el valor inicial del 'acumulado'
 
+// Lógica para vaciar el carrito al volver
+const btnVolverYVaciar = document.getElementById("btn-volver-y-vaciar");
+
+if (btnVolverYVaciar) {
+    btnVolverYVaciar.addEventListener('click', () => {
+        // 1. ELIMINAR el carrito del localStorage
+        localStorage.removeItem('carrito');
+
+        // 2. Redirigir al index.html
+        window.location.href = "../index.html";
+        
+        // Nota: El carrito se cargará como vacío (0) cuando el usuario vuelva a la página del catálogo/carrito, ya que se eliminó la entrada.
+    });
+}
+
 precioFinal.textContent = `${totalCalculado.toFixed(2)}€`;

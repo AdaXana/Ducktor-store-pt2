@@ -4,6 +4,7 @@ CAST / ENG
 
 <img align="right" src="https://i.gifer.com/GyRy.gif" width="220" /> 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
 Este README está diseñado como una presentación visual, atractiva, moderna y completamente bilingüe.
 -----------------------------------------------------------------------------------------------------------------------------------------------
