@@ -9,35 +9,38 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="../css/contacto.css">
+  <link rel="stylesheet" href="../css/header-footer.css">
   <title>Ducktor</title>
+  <link rel="icon" type="image" href="../img/LogoFoot.png">
 </head>
 
 <body>
-  <header>
-    <img src="../img/LogoDucktorNav.png" alt="logo" tittle="logo ducktor"></img>
-    <ul class="nav">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../html/catalogo.html">Catálogo</a></li>
-    </ul>
-    <div class="action">
-      <div class="searchBx">
-        <a href="#"><i class="bx bx-search"></i></a>
-        <input type="text" placeholder="Encuentra tu Ducktor">
-      </div>
-    </div>
-    <div class="toggleMenu" onclick="toggleMenu();"></div>
-  </header>
+    <header>
+        <img src="../img/LogoDucktorNav.png" alt="logo" title="logo ducktor"></img>
+        <ul class="nav">
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="./catalogo.html"><i class="fa-solid fa-store"></i> Catálogo</a></li>
+            <li><a href="./compra.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input type="text" placeholder="Encuentra tu Ducktor">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
 
   <main class="form-container">
-    <form>
+    <form id="form_duck">
       <h2>Contacto</h2>
       <div class="input-group">
         <label for="name">Nombre</label>
-        <input type="text" name="name" id="name" placeholder="nombre">
+        <input type="text" name="name" id="name" placeholder="Nombre">
         <label for="phone">Teléfono</label>
         <input type="tel" name="phone" id="phone" placeholder="Teléfono">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="email">
+        <input type="email" name="email" id="email" placeholder="Email">
         <label for="message">Mensaje</label>
         <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
         <div class="form-txt">
@@ -49,6 +52,7 @@
           <label for="novedades">Suscribirme a novedades y tips de bienestar con patitos</label>
         </div>
         <input class="btn" type="submit" value="Enviar">
+        <p id="confirm_message"></p>
       </div>
     </form>
   </main>
@@ -64,6 +68,16 @@
         <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
       </ul>
   </footer>
+  <script src="../js/contacto.js"></script>
+  <script type="module" src="../js/sello.js"></script>
+<div class="sello-flotante-container">
+    <a href="./detalle.html?id=Fundacion" class="sello-link">
+        <img src="../img/CodeWellAnimacion.png" alt="Colabora con CodeWell" class="img-sello-float">
+        <span class="tooltip-sello">¡Colabora!</span>
+    </a>
+    <audio id="audio-pato" src="../audio/quack.mp3"></audio>
+</div>
 </body>
+
 
 </html>
