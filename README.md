@@ -2,7 +2,7 @@ CAST / ENG
 
 # 🦆 DUCKS STORE — APP DINÁMICA COMPLETA 🛒
 
-<img align="right" src="![alt text](./img/image.png)" width="220" />
+<img align="right" src="./img/image.png" width="220" />
 
 Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
 Este README está diseñado como una presentación visual, atractiva, moderna y completamente bilingüe.
@@ -32,7 +32,7 @@ Incluye:
 
 ## 🏪 **1. Catálogo de Productos**
 
-<img src="![alt text](./img/image-2.png)" width="350" /> <!-- IMG CATÁLOGO -->
+<img src="./img/image-2.png" width="350" /> <!-- IMG CATÁLOGO -->
 
 - Renderizado mediante JavaScript.
 - Basado en un array de objetos.
@@ -43,7 +43,7 @@ Incluye:
 
 ## 🛒 **2. Carrito de Compras**
 
-<img src="![alt text](./img/image-4.png)" width="350" /> <!-- IMG CARRITO -->
+<img src="./img/image-4.png" width="350" /> <!-- IMG CARRITO -->
 
 - Agregar productos.
 - Incrementar o disminuir cantidades.
@@ -75,7 +75,7 @@ Incluye:
 
 ## 📩 **5. Formulario de Contacto**
 
-<img src="![alt text](./img/image-7.png)" width="350" /> <!-- IMG FORM -->
+<img src="./img/image-7.png" width="350" /> <!-- IMG FORM -->
 
 - Envía datos a `console.log()`.
 - Campos validados.
@@ -126,7 +126,7 @@ Incluye:
 
 # 🦆 DUCKS STORE — FULL DYNAMIC APP 🛒
 
-<img align="right" src="![alt text](./img/image-1.png)" width="220" />
+<img align="right" src="./img/image-1.png" width="220" />
 
 Ducks Store is a digital rubber-duck shop built to showcase **HTML5, CSS3 and modern JavaScript** applied to a real e‑commerce experience. This second development phase converts the original static site into a fully dynamic application.
 
@@ -145,7 +145,7 @@ Includes:
 
 ## 🏪 **1. Product Catalog**
 
-<img src="![alt text](./img/image-3.png)" width="350" /> <!-- IMG CATALOG -->
+<img src="./img/image-3.png" width="350" /> <!-- IMG CATALOG -->
 
 - Rendered dynamically from a JS objects array.
 - Add‑to‑cart buttons.
@@ -155,7 +155,7 @@ Includes:
 
 ## 🛒 **2. Shopping Cart**
 
-<img src="![alt text](./img/image-5.png)" width="350" /> <!-- IMG CART -->
+<img src="./img/image-5.png" width="350" /> <!-- IMG CART -->
 
 - Add items.
 - Increase/decrease quantities.
@@ -186,7 +186,7 @@ Includes:
 
 ## 📩 **5. Contact Form**
 
-<img src="![alt text](./img/image-6.png)" width="350" /> <!-- IMG FORM -->
+<img src="./img/image-6.png" width="350" /> <!-- IMG FORM -->
 
 - Sends data to console.
 - Validated fields.
