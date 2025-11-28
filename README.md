@@ -2,7 +2,7 @@ CAST / ENG
 
 # 🦆 DUCKS STORE — APP DINÁMICA COMPLETA 🛒
 
-<img align="right" src="./img/image.png" width="220" />
+<img align="right" src="https://i.gifer.com/GyRy.gif" width="220" /> 
 
 Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
 Este README está diseñado como una presentación visual, atractiva, moderna y completamente bilingüe.
@@ -13,7 +13,7 @@ Este README está diseñado como una presentación visual, atractiva, moderna y 
 
 # 🐥 ¿Qué es Ducks Store?
 
-<img align="right" src="" width="300" /> <!-- GIF/IMG SOBRE LA APP -->
+<img src="./img/image.png" width="350" /> 
 
 Ducks Store es una tienda online creada para demostrar el uso de **HTML5, CSS3 y JavaScript ES6+** aplicados a una experiencia de compra realista. Esta segunda fase del proyecto transforma una web estática en una aplicación totalmente dinámica.
 
@@ -32,7 +32,7 @@ Incluye:
 
 ## 🏪 **1. Catálogo de Productos**
 
-<img src="./img/image-2.png" width="350" /> <!-- IMG CATÁLOGO -->
+<img src="./img/image-2.png" width="350" /> 
 
 - Renderizado mediante JavaScript.
 - Basado en un array de objetos.
@@ -43,7 +43,7 @@ Incluye:
 
 ## 🛒 **2. Carrito de Compras**
 
-<img src="./img/image-4.png" width="350" /> <!-- IMG CARRITO -->
+<img src="./img/image-4.png" width="350" /> 
 
 - Agregar productos.
 - Incrementar o disminuir cantidades.
@@ -75,7 +75,7 @@ Incluye:
 
 ## 📩 **5. Formulario de Contacto**
 
-<img src="./img/image-7.png" width="350" /> <!-- IMG FORM -->
+<img src="./img/image-7.png" width="350" />
 
 - Envía datos a `console.log()`.
 - Campos validados.
@@ -145,7 +145,7 @@ Includes:
 
 ## 🏪 **1. Product Catalog**
 
-<img src="./img/image-3.png" width="350" /> <!-- IMG CATALOG -->
+<img src="./img/image-3.png" width="350" /> 
 
 - Rendered dynamically from a JS objects array.
 - Add‑to‑cart buttons.
@@ -155,7 +155,7 @@ Includes:
 
 ## 🛒 **2. Shopping Cart**
 
-<img src="./img/image-5.png" width="350" /> <!-- IMG CART -->
+<img src="./img/image-5.png" width="350" /> 
 
 - Add items.
 - Increase/decrease quantities.
@@ -186,7 +186,7 @@ Includes:
 
 ## 📩 **5. Contact Form**
 
-<img src="./img/image-6.png" width="350" /> <!-- IMG FORM -->
+<img src="./img/image-6.png" width="350" /> 
 
 - Sends data to console.
 - Validated fields.
@@ -226,7 +226,7 @@ Includes:
 
 # 🔗 Repository Link :dart:
 
-[Repository URL][https://github.com/AdaXana/Ducktor-store-pt2]
+[Repository URL](https://github.com/AdaXana/Ducktor-store-pt2)
 
 ---
 
