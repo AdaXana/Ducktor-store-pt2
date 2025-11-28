@@ -58,7 +58,7 @@ if (btnVolverYVaciar) {
         // 2. Redirigir al index.html
         window.location.href = "../index.html";
         
-        // Nota: El carrito se cargará como vacío (0) cuando el usuario vuelva a la página del catálogo/carrito, ya que se eliminó la entrada.
+        // El carrito se cargará como vacío (0) cuando el usuario vuelva a la página del catálogo/carrito, ya que se eliminó la entrada.
     });
 }
 

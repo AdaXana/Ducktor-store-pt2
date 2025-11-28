@@ -2,13 +2,13 @@ CAST / ENG
 
 # 🦆 DUCKS STORE — APP DINÁMICA COMPLETA 🛒
 
-<img align="right" src="https://i.gifer.com/GyRy.gif" width="220" /> 
+<img align="right" src="https://i.gifer.com/GyRy.gif" width="300" /> 
 
--------------------------------------------------------------------------------------------------------------------------------------------------
-Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
+---
+- Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
 Este README está diseñado como una presentación visual, atractiva, moderna y completamente bilingüe.
------------------------------------------------------------------------------------------------------------------------------------------------
-Welcome to the **Ducks Store** project, a digital store for rubber ducks transformed into a **dynamic application using JavaScript**.
+
+- Welcome to the **Ducks Store** project, a digital store for rubber ducks transformed into a **dynamic application using JavaScript**.
 This README is designed as a visually appealing, modern, and fully bilingual presentation.
 
 ---
@@ -60,7 +60,7 @@ Incluye:
 
 ## 💳 **3. Checkout Ficticio**
 
-<img src="./img/image8.png" width="350" /> >
+<img src="./img/image8.png" width="350" /> 
 
 - Muestra un **recibo detallado**.
 - Productos comprados + precios individuales.
@@ -68,21 +68,21 @@ Incluye:
 
 ---
 
-## 🔍 **4. Filtro por Categorías**
-
-<img src="" width="350" /> <!-- IMG FILTRO -->
-
-- Filtrado por tipo de patito.
-- Actualización inmediata del catálogo.
-
----
-
-## 📩 **5. Formulario de Contacto**
+## 📩 **4. Formulario de Contacto**
 
 <img src="./img/image-7.png" width="350" />
 
 - Envía datos a `console.log()`.
 - Campos validados.
+
+---
+
+<!-- ## 🔍 **5. Filtro por Categorías**
+
+<img src="" width="350" /> IMG FILTRO
+
+- Filtrado por tipo de patito.
+- Actualización inmediata del catálogo. -->
 
 ---
 
@@ -180,20 +180,20 @@ Includes:
 
 ---
 
-## 🔍 **4. Category Filter**
-
-<img src="" width="350" /> <!-- IMG FILTER -->
-
-- Instant product filtering.
-
----
-
-## 📩 **5. Contact Form**
+## 📩 **4. Contact Form**
 
 <img src="./img/image-6.png" width="350" /> 
 
 - Sends data to console.
 - Validated fields.
+
+---
+
+<!-- ## 🔍 **5. Category Filter**
+
+<img src="" width="350" /> IMG FILTER
+
+- Instant product filtering. -->
 
 ---
 
@@ -228,7 +228,7 @@ Includes:
 
 ---
 
-# 🔗 Repository Link :dart:
+# 🔗 Repository Link
 
 [Repository URL](https://github.com/AdaXana/Ducktor-store-pt2)
 
@@ -247,5 +247,5 @@ Includes:
 - **Patricia Pérez**
   [GitHub](https://github.com/delitricia) [LinkedIn](https://mx.linkedin.com/in/patricia-perez-marquez)
 
-- **Honorable Mention to: Leonela Rivas**
+- ⭐ **Honorable Mention to: Leonela Rivas** ⭐
   [GitHub](https://github.com/Leonela88) [LinkedIn](https://www.linkedin.com/in/leonela-rivas-28a706246/)
