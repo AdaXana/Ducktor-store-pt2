@@ -115,98 +115,13 @@ textarea {
 }
 
 #confirm_message {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #0047AB;
-  margin-top: 10px;
-}
-
-footer {
-    height: auto;
-    min-height: 70px;
-    width: 100%;
-    padding: 1rem 5rem;
-    background: #4cacec;
-    display: flex;
-    align-items: center;
-    transition: 0.5s;
-    box-sizing: border-box;
-}
-
-footer .info {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-footer .info img {
-    color: white;
-    max-width: 50px;
-}
-
-footer .info p {
-    color: #f0f0f0;
-    margin: 0;
-}
-
-footer .info .copy {
-    /* flex: 1; */
-    text-align: left;
-}
-
-footer .info a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-
-}
-
-footer .info .contact {
-    flex: 1;
     text-align: center;
-}
-
-footer .info a:hover {
-    text-decoration: underline;
-}
-
-footer .info ul {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-footer .info ul li {
-    list-style: none;
-    height: 2.5rem;
-    width: 2.5rem;
-    margin: 0 0.313rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-    transition: 0.3s;
-}
-
-footer .info ul li:hover {
-    background: white;
-}
-
-footer .info ul li a i {
+    font-weight: bold;
     font-size: 1.5em;
-    color: white;
-    transition: 0.3s;
+    color: #0047AB;
+    margin-top: 10px;
 }
 
-footer .info ul li:hover a i {
-    color: #4cacec;
-}
 
 @media(max-width:991px) {
     body {
