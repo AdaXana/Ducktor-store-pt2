@@ -1,12 +1,8 @@
-/* BODY */
-
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* ESTILOS DEL CATÁLOGO  */
 
 .boton_filtro {
     border: none;
@@ -22,15 +18,18 @@ body {
     margin-top: 6rem;
     margin: 1rem;
 }
+
 .boton_filtro.active {
     background-color: #3491d0;
-    color: white; 
+    color: white;
     border: none;
 }
+
 .categories {
     display: flex;
     justify-content: flex-end;
 }
+
 .content {
     padding: 6.25rem 5rem 2rem 5rem;
     min-height: 100vh;
@@ -57,7 +56,6 @@ body {
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* tres cards en cada linia */
     gap: 1.5rem;
 }
 
@@ -66,7 +64,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    /* Para que la imagen no se salga */
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -130,19 +127,9 @@ body {
 }
 
 
-/* MEDIA QUERIES PARA RESPONSIVE */
 
-/* Tablets */
-@media (max-width: 768px) {
-    
-}
+@media (max-width: 768px) {}
 
-/* Móviles */
-@media (max-width: 480px) {
+@media (max-width: 480px) {}
 
-}
-
-/* Para pantallas muy grandes */
-@media (min-width: 1200px) {
-    
-}
+@media (min-width: 1200px) {}

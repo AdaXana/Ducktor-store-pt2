@@ -2,10 +2,7 @@ body {
     margin: 0;
     padding: 80px 0 0 0;
     box-sizing: border-box;
-
 }
-
-/* MAIN */
 
 .form-container {
     min-height: 100vh;
@@ -115,11 +112,11 @@ textarea {
 }
 
 #confirm_message {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #0047AB;
-  margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #0047AB;
+    margin-top: 10px;
 }
 
 footer {
@@ -153,7 +150,6 @@ footer .info p {
 }
 
 footer .info .copy {
-    /* flex: 1; */
     text-align: left;
 }
 
@@ -227,19 +223,9 @@ footer .info ul li:hover a i {
 
 }
 
-/* MEDIA QUERIES PARA RESPONSIVE */
 
-/* Tablets */
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 
-}
+@media (max-width: 480px) {}
 
-/* Móviles */
-@media (max-width: 480px) {
-
-}
-
-/* Para pantallas muy grandes */
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}

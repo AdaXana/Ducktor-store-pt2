@@ -4,9 +4,6 @@ body {
     box-sizing: border-box;
 }
 
-
-/* CONTENIDO */
-
 .payment_section {
     margin-top: 20%;
     margin-bottom: 15%;
@@ -24,11 +21,12 @@ body {
     padding: 20px 40px;
     border-radius: 10px;
 }
+
 .my_payment {
     background: #f2f2f2;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     text-align: center;
     height: fit-content;
     position: sticky;
@@ -207,17 +205,9 @@ button.payment:hover {
     margin: 0 0 1.5rem 0;
 }
 
-/* MEDIA QUERIES PARA RESPONSIVE */
 
-/* Tablets */
-@media (max-width: 768px) {
-    
-}
+@media (max-width: 768px) {}
 
-/* Móviles */
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
-/* Para pantallas muy grandes */
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}

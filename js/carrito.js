@@ -1,32 +1,25 @@
-// 1. Inicializar carrito
 import { productos } from "./productos.js";
 
-// Comprobamos si localStorage existe antes de intentar leerlo
 let carrito = [];
 
 if (typeof localStorage !== 'undefined') {
-    // Estamos en el navegador
     carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 } else {
-    // Estamos en VS Code (Node.js), iniciamos vacío sin leer nada
     console.log("Nota: localStorage no está disponible en este entorno. Se inicia carrito vacío.");
 }
 
-// Función auxiliar para guardar el carrito si se cierra el navegador
 const saveCart = () => {
     if (typeof localStorage !== 'undefined') {
         localStorage.setItem('carrito', JSON.stringify(carrito));
     }
 };
 
-// 2. Obtener carrito
 const getCart = () => {
     return carrito;
 };
 
-// 3. Añadir al carrito
 const addToCart = (productId) => {
-    const productInfo = productos.find(p => String(p.id) === String(productId)); // Buscamos el producto en la lista importada (productos.js)
+    const productInfo = productos.find(p => String(p.id) === String(productId));
 
     if (!productInfo) {
         console.error("Producto no encontrado con ID:", productId);
@@ -36,17 +29,16 @@ const addToCart = (productId) => {
     const existingItem = carrito.find(item => item.id === productId);
 
     if (existingItem) {
-        // CASO A: YA EXISTE EN EL CARRITO 
         if (existingItem.cantidad < productInfo.stock) {
-            existingItem.cantidad++; // Validamos Stock antes de sumar
+            existingItem.cantidad++;
             console.log(`Sumado 1. Ahora tienes ${existingItem.cantidad} de ${productInfo.nombre}`);
         } else {
             console.warn(`No hay suficiente stock disponible. Solo quedan ${productInfo.stock} unidades.`);
             return;
         }
     } else {
-        // CASO B: ES NUEVO EN EL CARRITO
-        if (productInfo.stock > 0) { // Validamos que haya al menos 1 en stock
+
+        if (productInfo.stock > 0) {
             carrito.push({ id: productId, cantidad: 1 });
             console.log(`Producto ${productInfo.nombre} añadido al carrito.`);
         } else {
@@ -54,12 +46,10 @@ const addToCart = (productId) => {
             return;
         }
     }
-    saveCart(); // Guardar cambios en localStorage
-    renderCart(); // Llamar a renderCart después de modificar
+    saveCart();
+    renderCart();
 };
 
-
-// 4. Actualizar cantidad en el carrito
 const updateQuantity = (productId, newQuantity) => {
     const productInfo = productos.find(p => p.id === productId);
     const existingItem = carrito.find(item => item.id === productId);
@@ -75,15 +65,12 @@ const updateQuantity = (productId, newQuantity) => {
         console.error("La cantidad debe ser un número positivo.");
         return;
     }
-    
-    // --- LÓGICA DE MANEJO DE CANTIDAD ---
+
 
     if (quantity === 0) {
-        // Lógica: Si cantidad llega a 0 -> eliminar item
         removeFromCart(productId);
         console.log(`Cantidad a 0: Ítem ${productId} eliminado.`);
     } else if (existingItem) {
-        // CASO 1: EL PRODUCTO YA EXISTE (ACTUALIZAR)
         if (quantity > productInfo.stock) {
             console.warn(`No puedes pedir ${quantity}, solo hay ${productInfo.stock}.`);
             existingItem.cantidad = productInfo.stock;
@@ -94,7 +81,6 @@ const updateQuantity = (productId, newQuantity) => {
         saveCart();
 
     } else if (quantity > 0) {
-        // CASO 2: EL PRODUCTO ES NUEVO (AÑADIR)
         if (quantity > productInfo.stock) {
             console.warn(`El producto es nuevo pero solo hay ${productInfo.stock} unidades. Se añadirá el máximo.`);
             carrito.push({ id: productId, cantidad: productInfo.stock });
@@ -103,14 +89,10 @@ const updateQuantity = (productId, newQuantity) => {
             console.log(`Producto ${productInfo.nombre} añadido al carrito con cantidad ${quantity}.`);
         }
         saveCart();
-    } 
-    
-    // Si llegamos aquí y no existe, y quantity es 0, no hacemos nada (ya fue validado arriba)
-
+    }
     renderCart();
 };
 
-// Función auxiliar para restar 1 unidad (útil para botones de decremento)
 const decrementQuantity = (productId) => {
     const existingItem = carrito.find(item => item.id === productId);
     if (existingItem) {
@@ -118,7 +100,7 @@ const decrementQuantity = (productId) => {
     }
 };
 
-// 5. Eliminar del carrito
+
 const removeFromCart = (productId) => {
 
     carrito = carrito.filter(item => item.id !== productId);
@@ -126,7 +108,6 @@ const removeFromCart = (productId) => {
     renderCart();
 };
 
-// 6. Calcular Total
 const calculateTotal = () => {
     const productMap = new Map(productos.map(p => [p.id, p.precio]));
     let total = 0;
@@ -140,7 +121,6 @@ const calculateTotal = () => {
     return total;
 };
 
-// 7. Renderizar el Carrito
 const renderCart = () => {
     const container = document.getElementById('lista-carrito');
     const totalDisplay = document.getElementById('total-carrito');
@@ -229,9 +209,9 @@ window.restarUnidad = (id) => {
 
 const vaciarCarrito = () => {
     let confirmar = confirm("¿Seguro que quieres eliminar todos los productos?");
-    
+
     if (confirmar) {
-        carrito = []; 
+        carrito = [];
         localStorage.setItem('carrito', JSON.stringify(carrito));
         renderCart();
     }
@@ -257,7 +237,6 @@ if (typeof window !== 'undefined') {
     }
 }
 
-// --- ZONA DE EXPORTACIÓN PARA NODE.JS ---
 export {
     addToCart,
     removeFromCart,
@@ -269,13 +248,3 @@ export {
 };
 
 
-// // --- ZONA DE PRUEBAS ---
-
-// if (typeof window !== 'undefined') {
-//     window.addToCart = addToCart;
-//     window.removeFromCart = removeFromCart;
-//     window.updateQuantity = updateQuantity;
-//     window.getCart = getCart;
-//     window.calculateTotal = calculateTotal;
-//     window.clearCart = () => { carrito = []; saveCart(); console.log("Carrito vaciado"); };
-// }
