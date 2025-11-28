@@ -72,14 +72,13 @@ Incluye:
 
 ## ⌨️ Tecnologías Utilizadas ⌨️
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-<img align="right" src="" width="150" /> <!-- IMG STACK -->
 
 ### Frontend
-- **HTML5** — Estructura semántica.
-- **CSS3** — Diseño, animaciones y responsive.
-- **JavaScript ES6+** — Lógica dinámica.
+- **HTML5** — Semantic structure.
+- **CSS3** — Design, animations, responsive.
+- **JavaScript ES6+** — Dynamic logi
 
 ### Diseño / Productividad
 - **Figma** — Mockups.
@@ -87,7 +86,7 @@ Incluye:
 
 ### Gestión y Versionado
 - **Git + GitHub** — Gitflow.
-- **Trello / Jira** — Gestión ágil.
+- **Trello** — Gestión ágil.
 
 ---
 
@@ -165,22 +164,21 @@ Includes:
 ---
 
 # ⌨️ Tech Stack
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-<img align="right" src="" width="150" /> <!-- ENG STACK -->
 
 ### Frontend
-- HTML5
-- CSS3
-- JavaScript ES6+
+- **HTML5** — Semantic structure.
+- **CSS3** — Design, animations, responsive.
+- **JavaScript ES6+** — Dynamic logi
 
-### Design / Productivity
-- Figma
-- VS Code
+### Diseño / Productividad
+- **Figma** — Mockups.
+- **VS Code** — Editor.
 
-### Version Control & Management
-- Git + GitHub
-- Trello / Jira
+### Gestión y Versionado
+- **Git + GitHub** — Gitflow.
+- **Trello** — Gestión ágil.
 
 ---
 
@@ -190,7 +188,7 @@ Includes:
 ---
 
 # 🔗 Repository Link :dart:
-[https://github.com/AdaXana/Ducktor-store-pt2]
+[Repository URL][https://github.com/AdaXana/Ducktor-store-pt2]
 
 ---
 
@@ -198,4 +196,4 @@ Includes:
 **Ducks Store Team:**
 
 - **Anna Hidalgo Costa**
-- [GitHub](https://github.com/annahico) - [LinkedIn](https://www.linkedin.com/in/annahico/)
+[GitHub](https://github.com/annahico) [LinkedIn](https://www.linkedin.com/in/annahico/)
