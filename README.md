@@ -1,0 +1,201 @@
+CAST / ENG
+
+# 🦆 DUCKS STORE — APP DINÁMICA COMPLETA 🛒
+
+<img align="right" src="" width="220" /> <!-- ESPACIO PARA IMAGEN PRINCIPAL DE LA APP -->
+
+Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
+Este README está diseñado como una presentación visual, atractiva, moderna y completamente bilingüe.
+
+---
+
+# 🇪🇸 VERSIÓN EN ESPAÑOL
+
+# 🐥 ¿Qué es Ducks Store?
+<img align="right" src="" width="300" /> <!-- GIF/IMG SOBRE LA APP -->
+
+Ducks Store es una tienda online creada para demostrar el uso de **HTML5, CSS3 y JavaScript ES6+** aplicados a una experiencia de compra realista. Esta segunda fase del proyecto transforma una web estática en una aplicación totalmente dinámica.
+
+Incluye:
+- 🛒 Carrito de compras funcional.
+- 🦆 Catálogo dinámico.
+- 🔍 Filtro por categorías.
+- 💳 Checkout ficticio.
+- 💬 Formulario de contacto con registro en consola.
+- 🎨 Estilo fiel a mockups y diseño responsive.
+
+---
+
+# 📑 Vistas del Proyecto
+
+## 🏪 **1. Catálogo de Productos**
+<img src="" width="350" /> <!-- IMG CATÁLOGO -->
+- Renderizado mediante JavaScript.
+- Basado en un array de objetos.
+- Botones para añadir al carrito.
+- Responsive.
+
+---
+
+## 🛒 **2. Carrito de Compras**
+<img src="" width="350" /> <!-- IMG CARRITO -->
+- Agregar productos.
+- Incrementar o disminuir cantidades.
+- Subtotal automático.
+- Total acumulado en tiempo real.
+- Eliminar productos manualmente o al llegar a 0.
+- Evita cantidades negativas.
+
+---
+
+## 💳 **3. Checkout Ficticio**
+<img src="" width="350" /> <!-- IMG CHECKOUT -->
+- Muestra un **recibo detallado**.
+- Productos comprados + precios individuales.
+- Cierre de compra con mensaje final.
+
+---
+
+## 🔍 **4. Filtro por Categorías**
+<img src="" width="350" /> <!-- IMG FILTRO -->
+- Filtrado por tipo de patito.
+- Actualización inmediata del catálogo.
+
+---
+
+## 📩 **5. Formulario de Contacto**
+<img src="" width="350" /> <!-- IMG FORM -->
+- Envía datos a `console.log()`.
+- Campos validados.
+
+---
+
+## ⌨️ Tecnologías Utilizadas ⌨️
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+<img align="right" src="" width="150" /> <!-- IMG STACK -->
+
+### Frontend
+- **HTML5** — Estructura semántica.
+- **CSS3** — Diseño, animaciones y responsive.
+- **JavaScript ES6+** — Lógica dinámica.
+
+### Diseño / Productividad
+- **Figma** — Mockups.
+- **VS Code** — Editor.
+
+### Gestión y Versionado
+- **Git + GitHub** — Gitflow.
+- **Trello / Jira** — Gestión ágil.
+
+---
+
+# 🧪 Testing
+- Al menos **1 test unitario** implementado con **Jest** o **Vitest**.
+
+---
+
+# ⚙️ Metodología
+- Scrum + Kanban.
+- 1 Sprint.
+- Daily Scrum.
+- Retrospectiva.
+
+---
+
+# 🇬🇧 ENGLISH VERSION
+
+# 🦆 DUCKS STORE — FULL DYNAMIC APP 🛒
+
+<img align="right" src="" width="220" /> <!-- MAIN APP IMAGE (ENG) -->
+
+Ducks Store is a digital rubber-duck shop built to showcase **HTML5, CSS3 and modern JavaScript** applied to a real e‑commerce experience. This second development phase converts the original static site into a fully dynamic application.
+
+Includes:
+- 🛒 Fully functional shopping cart.
+- 🦆 Dynamic product catalog.
+- 🔍 Category filter.
+- 💳 Mock checkout.
+- 💬 Contact form logged to console.
+- 🎨 Responsive design based on Figma mockups.
+
+---
+
+# 📑 Project Views
+
+## 🏪 **1. Product Catalog**
+<img src="" width="350" /> <!-- IMG CATALOG -->
+- Rendered dynamically from a JS objects array.
+- Add‑to‑cart buttons.
+- Fully responsive layout.
+
+---
+
+## 🛒 **2. Shopping Cart**
+<img src="" width="350" /> <!-- IMG CART -->
+- Add items.
+- Increase/decrease quantities.
+- Automatic subtotal.
+- Real‑time total calculation.
+- Remove items manually or at 0.
+- Prevents negative values.
+
+---
+
+## 💳 **3. Mock Checkout**
+<img src="" width="350" /> <!-- IMG CHECKOUT -->
+- Displays a full purchase receipt.
+- Lists products and unit prices.
+- Includes final success message.
+
+---
+
+## 🔍 **4. Category Filter**
+<img src="" width="350" /> <!-- IMG FILTER -->
+- Instant product filtering.
+
+---
+
+## 📩 **5. Contact Form**
+<img src="" width="350" /> <!-- IMG FORM -->
+- Sends data to console.
+- Validated fields.
+
+---
+
+# ⌨️ Tech Stack
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+<img align="right" src="" width="150" /> <!-- ENG STACK -->
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript ES6+
+
+### Design / Productivity
+- Figma
+- VS Code
+
+### Version Control & Management
+- Git + GitHub
+- Trello / Jira
+
+---
+
+# 🧪 Testing
+- At least **1 unit test** with Jest or Vitest.
+
+---
+
+# 🔗 Repository Link :dart:
+[https://github.com/AdaXana/Ducktor-store-pt2]
+
+---
+
+# 👤 Authors :wave:
+**Ducks Store Team:**
+
+- **Anna Hidalgo Costa**
+- [GitHub](https://github.com/annahico) - [LinkedIn](https://www.linkedin.com/in/annahico/)
