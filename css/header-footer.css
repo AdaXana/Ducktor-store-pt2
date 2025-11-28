@@ -1,3 +1,7 @@
+html {
+    font-size: 14px; /* Bajamos de 16px a 14px. Todo se reduce un 12% aprox. */
+}
+
 /* BODY */
 body {
     margin: 0;
@@ -156,6 +160,79 @@ footer .info ul li:hover a i {
     color: #4cacec;
 }
 
+
+.sello-flotante-container {
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-sello-float {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 3px solid white;
+    cursor: pointer;
+    animation: temblor 5s ease-in-out infinite;
+    transition: transform 0.3s;
+}
+
+.img-sello-float:hover {
+    transform: scale(1.1) rotate(-10deg);
+    animation-play-state: paused;
+}
+
+.tooltip-sello {
+    background: #FFD700;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px 20px 0 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    position: absolute;
+    right: 100%;
+    top: 20px;
+    margin-right: 15px;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.sello-link:hover .tooltip-sello {
+    opacity: 1;
+    top: -40px;
+    transform: translateX(-5px);
+}
+
+/* --- DEFINICIÓN DEL TEMBLOR --- */
+@keyframes temblor {
+    0% { transform: rotate(0deg); }
+    2% { transform: rotate(-10deg); }
+    4% { transform: rotate(10deg); }
+    6% { transform: rotate(-10deg); }
+    8% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); } /* Quieto el resto del tiempo */
+}
+
+/* RESPONSIVE: En móvil lo hacemos un pelín más pequeño */
+@media (max-width: 768px) {
+    .img-sello-float {
+        width: 60px;
+        height: 60px;
+    }
+    .sello-flotante-container {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
 /* MEDIA QUERIES PARA RESPONSIVE */
 
 /* Tablets */
@@ -209,5 +286,10 @@ footer .info ul li:hover a i {
 
     header img {
         max-width: 250px;
+    }
+}
+@media (min-width: 1400px) {
+    html {
+        font-size: 16px;
     }
 }

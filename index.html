@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header-footer.css">
-    <title>Ducktor</title>
+    <title>Ducktor Store</title>
     <link rel="icon" type="image" href="./img/LogoFoot.png">
 </head>
 
@@ -20,7 +20,7 @@
         <ul class="nav">
             <li><a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
             <li><a href="../html/catalogo.html"><i class="fa-solid fa-store"></i> Catálogo</a></li>
-            <li><a href="../html/carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+            <li><a href="../html/compra.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
         </ul>
         <div class="action">
             <div class="searchBx">
@@ -40,18 +40,19 @@
             </p>
             <div class="details">
                 <a href="../html/catalogo.html">
-                    <button class="button_catalog">Ver catálogo </button> 
+                    <button class="button_catalog">Ver catálogo </button>
                 </a>
             </div>
             <div class="patito_del_mes">
-                <a href="../html/codewell.html">
-                    <img class="pato_benefico" src="./img/CodeWell.png" alt="Imagen de patito benefico" title="pato_benefico">
+                <a href="./html/detalle.html?id=Fundacion">
+                    <img class="pato_benefico" src="./img/CodeWellAnimacion.png" alt="Imagen de patito benefico"
+                        title="pato_benefico">
                 </a>
-                <a href="../html/codewell.html">
-                    <button class="button_codewell">Adquiere tu Ducktor Hope</button> 
+                <a href="./html/detalle.html?id=Fundacion">
+                    <button class="button_codewell">Adquiere tu Ducktor Hope</button>
                 </a>
                 <p class="benefico">
-                    Con la compra del Ducktor Hope apoyas a la fundación Code Well <br> que trabaja por la salud mental. 
+                    Con la compra del Ducktor Hope apoyas a la fundación Code Well <br> que trabaja por la salud mental.
                 </p>
             </div>
         </div>
@@ -70,7 +71,14 @@
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
             </ul>
     </footer>
-
+    <script type="module" src="./js/sello.js"></script>
+    <div class="sello-flotante-container">
+        <a href="../html/detalle.html?id=Fundacion" class="sello-link">
+            <img src="./img/CodeWellAnimacion.png" alt="Colabora con CodeWell" class="img-sello-float">
+            <span class="tooltip-sello">¡Colabora!</span>
+        </a>
+        <audio id="audio-pato" src="./audio/quack.mp3"></audio>
+    </div>
 </body>
 
 </html>

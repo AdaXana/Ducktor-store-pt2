@@ -108,11 +108,11 @@ body {
     padding: 0;
     min-width: 0;
 }
-.patote{
+.patote {
     display: block;
     max-width: 100%;
-    height: auto;
-    float: right;
+    max-height: 60vh;
+    object-fit: contain;
 }
 
 /* MEDIA QUERIES PARA RESPONSIVE */
