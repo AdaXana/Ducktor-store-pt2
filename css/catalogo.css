@@ -8,6 +8,29 @@ body {
 
 /* ESTILOS DEL CATÁLOGO  */
 
+.boton_filtro {
+    border: none;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    width: auto;
+    margin-top: 6rem;
+    margin: 1rem;
+}
+.boton_filtro.active {
+    background-color: #3491d0;
+    color: white; 
+    border: none;
+}
+.categories {
+    display: flex;
+    justify-content: flex-end;
+}
 .content {
     padding: 6.25rem 5rem 2rem 5rem;
     min-height: 100vh;
