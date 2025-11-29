@@ -1,17 +1,9 @@
-// __tests__/testCarrito.test.js
+const ID_MOTIVADOR = 'Motivador';
+const ID_FOCUS = 'Focus';
+const ID_MEDITACION = 'Meditacion';
+const FOCUS_STOCK_MAX = 2;
+const PRECIO_UNITARIO = 12.00;
 
-
-// Definición de IDs y datos clave para las pruebas
-// USAMOS LOS STRINGS DE ID EXACTOS DEl ARCHIVO productos.js
-const ID_MOTIVADOR = 'Motivador';   // Stock: 10, Precio: 12.00
-const ID_FOCUS = 'Focus';           // Stock: 2, Precio: 12.00
-const ID_MEDITACION = 'Meditacion'; // Stock: 0, Precio: 12.00
-const FOCUS_STOCK_MAX = 2;          // Stock de Focus
-const PRECIO_UNITARIO = 12.00;     // Stock de Focus
-
-
-// --- Configuración de Entorno de Pruebas ---
-// Jest Mock para simular localStorage si no está disponible (Necesario para Node/Jest)
 if (typeof localStorage === 'undefined') {
     global.localStorage = {
         store: {},
@@ -29,21 +21,14 @@ if (typeof document === 'undefined') {
         })
     };
 }
-
-// Usamos una variable global para almacenar las funciones importadas
 let addToCart, updateQuantity, decrementQuantity, getCart, calculateTotal;
 
 describe('Funcionalidad Completa del Carrito (Usando Jest)', () => {
-
-    // Reinicia el estado del módulo y del localStorage antes de cada test.
     beforeEach(async () => {
-        // 1. Limpia el localStorage para evitar errores entre tests
         localStorage.clear();
 
-        // 2. IMPORTANTE: Reinicia el caché de módulos para forzar la re-ejecución de carrito.js, lo que reinicia la variable 'carrito = []' interna.
         jest.resetModules();
 
-        // 3. Vuelve a importar las funciones
         const carritoModule = await import('../js/carrito.js');
         addToCart = carritoModule.addToCart;
         updateQuantity = carritoModule.updateQuantity;
@@ -94,23 +79,16 @@ describe('Funcionalidad Completa del Carrito (Usando Jest)', () => {
     });
 
 
-    // 6. Debe eliminar el producto del carrito si la cantidad llega a 0 
     test('6. Debe eliminar el producto del carrito si la cantidad llega a 0', () => {
-        // Setup: Aseguramos que Motivador está con una cantidad de 1 gracias a addToCart
         addToCart(ID_MOTIVADOR);
 
-        // Usamos decrement para bajar de 1 a 0 que debe eliminarlo usando updateQuantity(id, 0)
         decrementQuantity(ID_MOTIVADOR);
 
         const motivador = getCart().find(item => item.id === ID_MOTIVADOR);
-        // El producto ya no debe existir en el carrito.
         expect(motivador).toBeUndefined();
     });
 
-    // 7. Prueba de cálculo final 
     test('7. Debe calcular el total correctamente (Focus On x2 = 24.00)', () => {
-
-        // Setup: Limpio por el beforeEach, solo añadimos Focus On (2 unidades)
         updateQuantity(ID_FOCUS, FOCUS_STOCK_MAX);
 
         const totalEsperado = PRECIO_UNITARIO * FOCUS_STOCK_MAX;

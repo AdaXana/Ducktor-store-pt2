@@ -2,10 +2,14 @@ CAST / ENG
 
 # 🦆 DUCKS STORE — APP DINÁMICA COMPLETA 🛒
 
-<img align="right" src="![alt text](./img/image.png)" width="220" />
+<img align="right" src="https://i.gifer.com/GyRy.gif" width="300" /> 
 
-Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
+---
+- Bienvenido/a al proyecto **Ducks Store**, una tienda digital de patitos de goma convertida en una **aplicación dinámica con JavaScript**.  
 Este README está diseñado como una presentación visual, atractiva, moderna y completamente bilingüe.
+
+- Welcome to the **Ducks Store** project, a digital store for rubber ducks transformed into a **dynamic application using JavaScript**.
+This README is designed as a visually appealing, modern, and fully bilingual presentation.
 
 ---
 
@@ -13,7 +17,7 @@ Este README está diseñado como una presentación visual, atractiva, moderna y 
 
 # 🐥 ¿Qué es Ducks Store?
 
-<img align="right" src="" width="300" /> <!-- GIF/IMG SOBRE LA APP -->
+<img src="./img/image.png" width="550" /> 
 
 Ducks Store es una tienda online creada para demostrar el uso de **HTML5, CSS3 y JavaScript ES6+** aplicados a una experiencia de compra realista. Esta segunda fase del proyecto transforma una web estática en una aplicación totalmente dinámica.
 
@@ -32,7 +36,7 @@ Incluye:
 
 ## 🏪 **1. Catálogo de Productos**
 
-<img src="![alt text](./img/image-2.png)" width="350" /> <!-- IMG CATÁLOGO -->
+<img src="./img/image-2.png" width="350" /> 
 
 - Renderizado mediante JavaScript.
 - Basado en un array de objetos.
@@ -43,7 +47,7 @@ Incluye:
 
 ## 🛒 **2. Carrito de Compras**
 
-<img src="![alt text](./img/image-4.png)" width="350" /> <!-- IMG CARRITO -->
+<img src="./img/image-4.png" width="350" /> 
 
 - Agregar productos.
 - Incrementar o disminuir cantidades.
@@ -56,7 +60,7 @@ Incluye:
 
 ## 💳 **3. Checkout Ficticio**
 
-<img src="" width="350" /> <!-- IMG CHECKOUT -->
+<img src="./img/image8.png" width="350" /> 
 
 - Muestra un **recibo detallado**.
 - Productos comprados + precios individuales.
@@ -64,21 +68,21 @@ Incluye:
 
 ---
 
-## 🔍 **4. Filtro por Categorías**
+## 📩 **4. Formulario de Contacto**
 
-<img src="" width="350" /> <!-- IMG FILTRO -->
-
-- Filtrado por tipo de patito.
-- Actualización inmediata del catálogo.
-
----
-
-## 📩 **5. Formulario de Contacto**
-
-<img src="![alt text](./img/image-7.png)" width="350" /> <!-- IMG FORM -->
+<img src="./img/image-7.png" width="350" />
 
 - Envía datos a `console.log()`.
 - Campos validados.
+
+---
+
+<!-- ## 🔍 **5. Filtro por Categorías**
+
+<img src="" width="350" /> IMG FILTRO
+
+- Filtrado por tipo de patito.
+- Actualización inmediata del catálogo. -->
 
 ---
 
@@ -126,7 +130,7 @@ Incluye:
 
 # 🦆 DUCKS STORE — FULL DYNAMIC APP 🛒
 
-<img align="right" src="![alt text](./img/image-1.png)" width="220" />
+<img src="./img/image.png" width="550" /> 
 
 Ducks Store is a digital rubber-duck shop built to showcase **HTML5, CSS3 and modern JavaScript** applied to a real e‑commerce experience. This second development phase converts the original static site into a fully dynamic application.
 
@@ -145,7 +149,7 @@ Includes:
 
 ## 🏪 **1. Product Catalog**
 
-<img src="![alt text](./img/image-3.png)" width="350" /> <!-- IMG CATALOG -->
+<img src="./img/image-3.png" width="350" /> 
 
 - Rendered dynamically from a JS objects array.
 - Add‑to‑cart buttons.
@@ -155,7 +159,7 @@ Includes:
 
 ## 🛒 **2. Shopping Cart**
 
-<img src="![alt text](./img/image-5.png)" width="350" /> <!-- IMG CART -->
+<img src="./img/image-5.png" width="350" /> 
 
 - Add items.
 - Increase/decrease quantities.
@@ -168,7 +172,7 @@ Includes:
 
 ## 💳 **3. Mock Checkout**
 
-<img src="" width="350" /> <!-- IMG CHECKOUT -->
+<img src="./img/image8.png" width="350" /> 
 
 - Displays a full purchase receipt.
 - Lists products and unit prices.
@@ -176,20 +180,20 @@ Includes:
 
 ---
 
-## 🔍 **4. Category Filter**
+## 📩 **4. Contact Form**
 
-<img src="" width="350" /> <!-- IMG FILTER -->
-
-- Instant product filtering.
-
----
-
-## 📩 **5. Contact Form**
-
-<img src="![alt text](./img/image-6.png)" width="350" /> <!-- IMG FORM -->
+<img src="./img/image-6.png" width="350" /> 
 
 - Sends data to console.
 - Validated fields.
+
+---
+
+<!-- ## 🔍 **5. Category Filter**
+
+<img src="" width="350" /> IMG FILTER
+
+- Instant product filtering. -->
 
 ---
 
@@ -224,9 +228,9 @@ Includes:
 
 ---
 
-# 🔗 Repository Link :dart:
+# 🔗 Repository Link
 
-[Repository URL][https://github.com/AdaXana/Ducktor-store-pt2]
+[Repository URL](https://github.com/AdaXana/Ducktor-store-pt2)
 
 ---
 
@@ -243,5 +247,5 @@ Includes:
 - **Patricia Pérez**
   [GitHub](https://github.com/delitricia) [LinkedIn](https://mx.linkedin.com/in/patricia-perez-marquez)
 
-- **Honorable Mention to: Leonela Rivas**
+- ⭐ **Honorable Mention to: Leonela Rivas** ⭐
   [GitHub](https://github.com/Leonela88) [LinkedIn](https://www.linkedin.com/in/leonela-rivas-28a706246/)

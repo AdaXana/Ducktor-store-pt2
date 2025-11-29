@@ -1,12 +1,9 @@
-/* BODY */
-
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* MAIN */
 
 .detalle-producto {
     padding-top: 10rem;
@@ -194,19 +191,9 @@ button:disabled {
 }
 
 
-/* MEDIA QUERIES PARA RESPONSIVE */
 
-/* Tablets */
-@media (max-width: 768px) {
-    
-}
+@media (max-width: 768px) {}
 
-/* Móviles */
-@media (max-width: 480px) {
+@media (max-width: 480px) {}
 
-}
-
-/* Para pantallas muy grandes */
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}

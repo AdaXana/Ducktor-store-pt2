@@ -1,18 +1,27 @@
+import { productos } from "./productos.js";
+
 const listaTicket = document.getElementById("lista-ticket");
 const precioFinal = document.getElementById("precio-final");
 
-
 const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-
 const filasTicket = carrito.map((item) => {
-    const subtotal = item.precio * item.cantidad;
+
+    const productoCompleto = productos.find(p => p.id === item.id);
+
+    if (!productoCompleto) {
+        console.warn(`Producto con ID ${item.id} no encontrado en el catálogo.`);
+        return '';
+    }
+
+    const subtotal = productoCompleto.precio * item.cantidad;
+
     return `
         <tr>
             <td class="product-col">
-                <span>${item.nombre}</span>
+                <span>${productoCompleto.nombre}</span> 
             </td>
-            <td>${item.precio.toFixed(2)}€</td>
+            <td>${productoCompleto.precio.toFixed(2)}€</td>
             <td>${item.cantidad}</td>
             <td style="text-align: right;">${subtotal.toFixed(2)}€</td>
         </tr>
@@ -21,13 +30,24 @@ const filasTicket = carrito.map((item) => {
 
 listaTicket.innerHTML = filasTicket.join("");
 
+const btnVolverYVaciar = document.getElementById("btn-volver-y-vaciar");
+
+if (btnVolverYVaciar) {
+    btnVolverYVaciar.addEventListener('click', () => {
+        localStorage.removeItem('carrito');
+        window.location.href = "../index.html";
+    });
+}
 
 const totalCalculado = carrito.reduce((acumulado, item) => {
-    return acumulado + (item.precio * item.cantidad);
+    const producto = productos.find(p => p.id === item.id);
+    if (producto) {
+        return acumulado + (producto.precio * item.cantidad);
+    }
+    return acumulado;
 }, 0);
 
 precioFinal.textContent = `${totalCalculado.toFixed(2)}€`;
-
 
 const btnVolver = document.querySelector('.btn-volver');
 
